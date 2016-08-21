@@ -104,3 +104,8 @@ sudo pip install aws-shell --upgrade --ignore-installed six
 Use ```CTRL-D``` to exit the aws shell.
 
 Once you have the shell installed you will need to configure your AWS credentials using ```aws configure```.  [You can follow those steps here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+
+### TerraForm
+
+Next we will install TerraForm.  TerraForm is a convinient way to manage our AWS (or other environments) as code.  You have likely heard of Infrastructure as Code.  TerraForm allows us to build our infrastructure in files that we can then check in as part of our github repository.  You can then make changes to the configuration files and ```apply``` those changes to a given environment for a given service or set of services.  [Start here to get TerraForm installed](https://www.terraform.io/intro/getting-started/install.html).
+
