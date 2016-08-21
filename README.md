@@ -97,4 +97,4 @@ brew install awscli
 
 And for some reason the shell makers wanted to use ```CTRL-D``` to exit the aws shell.
 
-Once you have the shell installed you will need to configure your AWS credentials.  [You can follow those steps here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
+Once you have the shell installed you will need to configure your AWS credentials using ```aws configure```.  [You can follow those steps here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
