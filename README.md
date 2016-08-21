@@ -87,6 +87,12 @@ We will be hosting all of our examples in AWS so you will need to create a [free
 
 When signing up you will be prompted to add a credit card.  And Amazon will call you to verify that you are a real person (automated call).  
 
-### AWS CLI
+### AWS CLI, python, pip
 
 Once you have an AWS account configured you will want to go grab the [AWS CLI](https://github.com/awslabs/aws-shell).  AWS CLI is a shell written in Python that gives you hints as you navigate through all the AWS services and functions.  This makes working with AWS on the command line pleasant. You will need [Python](https://www.python.org/downloads/) and an [upgraded PIP](https://pip.pypa.io/en/latest/installing/#upgrading-pip) installed to get this running.
+
+*MAC users* I found that the docs above didn't work.  SO suggested this instead which worked for me:
+
+```
+sudo easy_install pip
+```
