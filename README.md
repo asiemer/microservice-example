@@ -91,10 +91,16 @@ When signing up you will be prompted to add a credit card.  And Amazon will call
 
 Once you have an AWS account configured you will want to go grab the [AWS CLI](https://github.com/awslabs/aws-shell).  AWS CLI is a shell written in Python that gives you hints as you navigate through all the AWS services and functions.  This makes working with AWS on the command line pleasant. You will need [Python](https://www.python.org/downloads/) and an [upgraded PIP](https://pip.pypa.io/en/latest/installing/#upgrading-pip) installed to get this running.
 
-*MAC users* I found that the docs above didn't work.  StackOverflow suggested this instead which also didn't work for me:
+Once pip is running you can use pip to get the aws shell installed.
 
 ```
-sudo easy_install pip
+sudo pip install aws-shell
+```
+
+**MAC users** I found that the docs above didn't work.  StackOverflow suggested this instead which also didn't work for me:
+
+```
+easy_install pip
 ```
 
 But then I found that I can install pip using homebrew with this:
