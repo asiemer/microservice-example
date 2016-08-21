@@ -65,7 +65,9 @@ Depending on if you are on a mac, linux, or windows machine this step will be sl
 
 Once you have docker installed you should be able to go to a terminal window (I am using iTerm2 on mac) and type the following command:
 
-```docker --version
+```
+docker --version
+```
 
 You should see a version listed if all went well.
 ## Node
