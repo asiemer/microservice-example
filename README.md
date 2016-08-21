@@ -97,7 +97,7 @@ Once pip is running you can use pip to get the aws shell installed.
 sudo pip install aws-shell
 ```
 
-**MAC users** I found that the docs above didn't work.  StackOverflow suggested this instead which also didn't work for me:
+**MAC users** I found that the docs above didn't work.  [StackOverflow](http://stackoverflow.com/questions/17271319/installing-pip-on-mac-os-x) suggested this instead which also didn't work for me:
 
 ```
 easy_install pip
