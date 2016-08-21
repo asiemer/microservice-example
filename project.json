@@ -1,0 +1,8 @@
+{
+    "name": "weather-service",
+    "description": "",
+    "role": "arn:aws:iam::584725211772:role/lambda_function",
+    "timeout": 5,
+    "memory": 128,
+    "defaultEnvironment": "dev"
+}
