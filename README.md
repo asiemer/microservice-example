@@ -25,3 +25,35 @@ Each of the widgets in the dashboard shows a dense view of information surroundi
 
 For each service you can quickly identify the health of a service (up or down) and the traffic volume going through a given service.  You can also visualize traffic spikes, whether a circuit is closed or open average response times, errors being experienced, etc.  This dashboard is fed its information by the circuit breaker implementation (not all circuit breakers work with Hystrix - Brakes does though).
 
+### Monitoring
+
+### Logging
+
+### Alerting
+
+### On Call
+
+### Versioning
+
+#### Describe difference between major, minor, and build numbers in version number
+
+Contract break
+
+Logic change
+
+Additivie functionality / bug fixes
+
+#### No breaking changes in minor builds
+
+### Traffic drain over to new service
+
+### Data dog for lambda visualizations
+
+### Branching strategy to support many active versions
+
+### Excute Lambda from node using AWS sdk
+
+### How to deploy with infrastructure as code?  TerraForm
+
+### How to implement a continuous deployment pipeline across multiple AWS accounts
+
