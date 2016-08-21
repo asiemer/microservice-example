@@ -87,32 +87,14 @@ We will be hosting all of our examples in AWS so you will need to create a [free
 
 When signing up you will be prompted to add a credit card.  And Amazon will call you to verify that you are a real person (automated call).  
 
-### AWS CLI, python, pip
+### AWS CLI, python, pip, and homebrew
 
-Once you have an AWS account configured you will want to go grab the [AWS CLI](https://github.com/awslabs/aws-shell).  AWS CLI is a shell written in Python that gives you hints as you navigate through all the AWS services and functions.  This makes working with AWS on the command line pleasant. You will need [Python](https://www.python.org/downloads/) and an [upgraded PIP](https://pip.pypa.io/en/latest/installing/#upgrading-pip) installed to get this running.
-
-Once pip is running you can use pip to get the aws shell installed.
+Once you have an AWS account configured you will want to go grab the [AWS CLI](https://github.com/awslabs/aws-shell).  AWS CLI is a shell written in Python that gives you hints as you navigate through all the AWS services and functions.  This makes working with AWS on the command line pleasant. You will need [Python](https://www.python.org/downloads/).  AWS would tell you that you also need an [upgraded PIP](https://pip.pypa.io/en/latest/installing/#upgrading-pip) installation.  I had all sorts of issues with PIP and ultimately installed the CLI using homebrew instead (which just worked).
 
 ```
-sudo pip install aws-shell
-```
-
-**MAC users** I found that the docs above didn't work.  [StackOverflow](http://stackoverflow.com/questions/17271319/installing-pip-on-mac-os-x) suggested this instead which also didn't work for me:
-
-```
-easy_install pip
-```
-
-But then I found that I can install pip using homebrew with this:
-
-```
-brew install brew-pip
-```
-
-You may want to upgrade the AWS CLI from time to time.  Simply run this command.
-
-```
-pip install --upgrade aws-shell
+brew install awscli
 ```
 
 And for some reason the shell makers wanted to use ```CTRL-D``` to exit the aws shell.
+
+Once you have the shell installed you will need to configure your AWS credentials.  [You can follow those steps here](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-getting-started.html).
