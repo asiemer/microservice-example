@@ -21,7 +21,7 @@ Hystrix is a dashboard that provides a view into all of your services and the he
 
 Each of the widgets in the dashboard shows a dense view of information surrounding the service.
 
-![service information(http://3.bp.blogspot.com/-SC4iuKO8l4o/UMOTss3b4TI/AAAAAAAAAdY/w2-_vX0Vqwg/s1600/dashboard-annoted-circuit-640.png "service information")
+![service information](http://3.bp.blogspot.com/-SC4iuKO8l4o/UMOTss3b4TI/AAAAAAAAAdY/w2-_vX0Vqwg/s1600/dashboard-annoted-circuit-640.png "service information")
 
 For each service you can quickly identify the health of a service (up or down) and the traffic volume going through a given service.  You can also visualize traffic spikes, whether a circuit is closed or open average response times, errors being experienced, etc.  This dashboard is fed its information by the circuit breaker implementation (not all circuit breakers work with Hystrix - Brakes does though).
 
