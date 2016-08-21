@@ -57,3 +57,17 @@ Additivie functionality / bug fixes
 
 ### How to implement a continuous deployment pipeline across multiple AWS accounts
 
+# Prerequisites
+
+## Docker
+
+Depending on if you are on a mac, linux, or windows machine this step will be slightly different.  Start here https://docs.docker.com/engine/installation/
+
+Once you have docker installed you should be able to go to a terminal window (I am using iTerm2 on mac) and type the following command:
+
+'docker --version
+
+You should see a version listed if all went well.
+## Node
+
+## Amazon Web Services
