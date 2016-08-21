@@ -70,6 +70,19 @@ docker --version
 ```
 
 You should see a version listed if all went well.
+
 ## Node
 
-## Amazon Web Services
+New to node?  First - install node on your machine.  [Start here](https://nodejs.org/en/download/).  
+
+Then you need to head over to [nodeschool.io](http://www.nodeschool.io) (which is free).  It will tell you all there is to know about node. But it does it through interactive training session via the command line using the node package manager (NPM).
+
+You will need a great text editor like [Visual Studio Code](https://code.visualstudio.com/download),  [Atom](http://www.atom.io/), [Sublime Text](http://www.sublimetext.com/3), [Textmate](http://macromates.com/download), or [Brackets](http://brackets.io/).
+
+## Amazon Web Services (AWS)
+
+We will be hosting all of our examples in AWS so you will need to create a [free account(https://aws.amazon.com/free/) over there.  Preferably use a gmail account when signing up as you will need a few accounts in this demonstration. 
+
+Once you have an AWS account configured you will want to go grab the [AWS CLI](https://github.com/awslabs/aws-shell).  This is a shell written in Python that gives you hints as you navigate through all the AWS services and functions.  This makes working with AWS on the command line pleasant. 
+
+> In our example we will show you how to use multiple accounts to isolate your development, integration/staging, and production environments.  This type of isolation is great from a security perspective but also cuts down on the noise in your CI/CD scripts as well as noise in each of the accounts.  In order to keep all of these accounts on the free tier you might use gmail and their [+tag-name hack](https://support.google.com/mail/answer/12096?hl=en) to differentiate the same email when signing up for multiple accounts.
