@@ -83,8 +83,10 @@ You will need a great text editor like [Visual Studio Code](https://code.visuals
 
 We will be hosting all of our examples in AWS so you will need to create a [free account(https://aws.amazon.com/free/) over there.  Preferably use a gmail account when signing up as you will need a few accounts in this demonstration. 
 
-#### AWS CLI
+> In our example we will show you how to use multiple accounts to isolate your development, integration/staging, and production environments.  This type of isolation is great from a security perspective but also cuts down on the noise in your CI/CD scripts as well as noise in each of the accounts.  In order to keep all of these accounts on the free tier you might use gmail and their [+tag-name hack](https://support.google.com/mail/answer/12096?hl=en) to differentiate the same email when signing up for multiple accounts.
+
+When signing up you will be prompted to add a credit card.  And Amazon will call you to verify that you are a real person (automated call).  
+
+### AWS CLI
 
 Once you have an AWS account configured you will want to go grab the [AWS CLI](https://github.com/awslabs/aws-shell).  AWS CLI is a shell written in Python that gives you hints as you navigate through all the AWS services and functions.  This makes working with AWS on the command line pleasant. You will need [Python](https://www.python.org/downloads/) and an [upgraded PIP](https://pip.pypa.io/en/latest/installing/#upgrading-pip) installed to get this running.
-
-> In our example we will show you how to use multiple accounts to isolate your development, integration/staging, and production environments.  This type of isolation is great from a security perspective but also cuts down on the noise in your CI/CD scripts as well as noise in each of the accounts.  In order to keep all of these accounts on the free tier you might use gmail and their [+tag-name hack](https://support.google.com/mail/answer/12096?hl=en) to differentiate the same email when signing up for multiple accounts.
