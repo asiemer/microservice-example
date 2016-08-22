@@ -3,7 +3,7 @@ This repository contains an example of a microservice hosted in AWS using Elasti
 
 The example application we are going to build will illustrate how to manage an external service dependancy and how to manage when that dependancy fails now and then by defining a fallback strategy that uses a different external service.  We will build a small application that shows the weather for a given zip code.  In this code base we will see a single page application that communicates with an API that is a proxy to some external weather services.  Something like this:
 
-![service map]()
+![service map](https://github.com/asiemer/microservice-example/blob/master/weather-service.png)
 
 ## Questions
 
