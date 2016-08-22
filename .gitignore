@@ -1,2 +1,3 @@
 infrastructure/*/.terraform
 infrastructure/*/*.tfstate*
+*.DS_Store

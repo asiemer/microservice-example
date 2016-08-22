@@ -1,7 +1,9 @@
 # Microservice Example
 This repository contains an example of a microservice hosted in AWS using Elastic Container Services (ECS) and node primiarly.  The focus of this repository is to answer some common questions around designing, building, deploying, and managing a microservice.
 
-The example application we are going to build will illustrate how to manage an external service dependancy and how to manage when that dependancy fails now and then by defining a fallback strategy that uses a different external service.  We will build a small application that shows the weather for a given zip code.  In this code base we will see a single page application that communicates with an API that is a proxy to some external weather services.
+The example application we are going to build will illustrate how to manage an external service dependancy and how to manage when that dependancy fails now and then by defining a fallback strategy that uses a different external service.  We will build a small application that shows the weather for a given zip code.  In this code base we will see a single page application that communicates with an API that is a proxy to some external weather services.  Something like this:
+
+![service map]()
 
 ## Questions
 
