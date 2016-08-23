@@ -1,29 +1,30 @@
-module "iam" {
-  source = "../modules/iam"
+# Configure the AWS Provider
+provider "aws" {
+    region = "us-west-2"
 }
 
-# creates the nginx ECS
-module "nginx" {
-  source = "../modules/nginx"
-  prefix = "weather-service-nginx-v1"
-  region = "us-west-2"
-  image_name = "nginx"
-  image_version = "latest"
-  key_pair_name = "ecs"
-  vpc_id = "vpc-0c96be68"
-  elb_subnet_ids = "subnet-0a603e6e,subnet-a80573de,subnet-3775c46f"
-  ecs_cluster_subnet_ids = "subnet-0a603e6e,subnet-a80573de,subnet-3775c46f"
+module "stack" {
+  source      = "github.com/marioharper/stack" # the module source
+  name        = "weather" # the name for our project
+  environment = "dev" # the environment we're running in
+  key_name    = "dev" # reference a key you've previously created
 }
 
-# creates the weather-service ECS
-module "weather_service" {
-  source = "../modules/weather-service"
-  prefix = "weather-service-service-v1"
-  region = "us-west-2"
-  image_name = "alpine"
-  image_version = "latest"
-  key_pair_name = "ecs"
-  vpc_id = "vpc-0c96be68"
-  elb_subnet_ids = "subnet-0a603e6e,subnet-a80573de,subnet-3775c46f"
-  ecs_cluster_subnet_ids = "subnet-0a603e6e,subnet-a80573de,subnet-3775c46f"
+# creates the weather-service
+module "weather" {
+  source = "github.com/marioharper/stack/service"
+  name = "weather"
+  image = "alpine"
+  port = "80"
+  container_port = "80"
+  dns_name = "weather"
+
+  # these variables are automatically provisioned by stack
+  environment     = "${module.stack.environment}"
+  cluster         = "${module.stack.cluster}"
+  zone_id         = "${module.stack.zone_id}"
+  iam_role        = "${module.stack.iam_role}"
+  security_groups = "${module.stack.internal_elb}"
+  subnet_ids      = "${module.stack.internal_subnets}"
+  log_bucket      = "${module.stack.log_bucket_id}"
 }
