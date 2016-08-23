@@ -14,9 +14,9 @@ module "stack" {
 module "weather" {
   source = "github.com/marioharper/stack/service"
   name = "weather"
-  image = "alpine"
+  image = "marioharper/weather"
   port = "80"
-  container_port = "80"
+  container_port = "8080"
   dns_name = "weather"
 
   # these variables are automatically provisioned by stack
