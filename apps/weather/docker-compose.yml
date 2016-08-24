@@ -1,10 +1,6 @@
-weather:
+web:
   build: .
-  command: node_modules/.bin/nodemon index.js
-  environment: 
-    NODE_ENV: dev
-  ports:
-    - '8080:8080'
   volumes:
-    - .:/home/app/weather
-    - /home/app/chat/node_modules
+    - "./app:/src/app"
+  ports:
+    - "8080:8080"

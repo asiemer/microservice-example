@@ -4,11 +4,13 @@ RUN npm install --global npm@3.7.5
 
 ENV HOME=/home/app
 
-COPY package.json $HOME/weather/
+COPY ./app/package.json $HOME/
 
-WORKDIR $HOME/weather
+WORKDIR $HOME
 RUN npm install
 
-COPY . $HOME/weather
+COPY ./app $HOME
 
-CMD ["node", "index.js"]
+EXPOSE 8080
+
+CMD ["node", "./bin/www"]

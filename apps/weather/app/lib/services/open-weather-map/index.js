@@ -5,6 +5,6 @@ module.exports = {
 }
 
 function getByZip(zip){
-  return 'OWM: ' + zip;
+  return 'Open Weather Map: ' + zip;
 }
 

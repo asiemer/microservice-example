@@ -7,10 +7,10 @@ module.exports = {
   getByZip: getByZip
 }
 
-function getByZip(zip, fail){
+function getByZip(zip, fakeFail){
   var weather = "";
 
-  if(fail === "true"){
+  if(fakeFail === "true"){
     weather = wu.getByZip(zip);
   }else{
     weather = owm.getByZip(zip);

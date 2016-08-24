@@ -5,5 +5,5 @@ module.exports = {
 }
 
 function getByZip(zip){
-  return 'WU: ' + zip;
+  return 'Weather Underground: ' + zip;
 }
